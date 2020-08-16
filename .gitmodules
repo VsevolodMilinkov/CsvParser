@@ -1,0 +1,3 @@
+[submodule "CsvParserLib"]
+	path = CsvParserLib
+	url = https://github.com/VsevolodMilinkov/CsvParserLib

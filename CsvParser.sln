@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParser", "CsvParser\CsvParser.csproj", "{43138766-D48B-4236-BF1F-A280A97FF0A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csvParserLib", "csvParserLib", "{409693E8-FAD7-43CD-AD80-ADB209117144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParserLib", "CsvParserLib\CsvParserLib\CsvParserLib.csproj", "{FC43DE32-DB99-42EB-AE33-3ECD84845E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParserLib.Tests", "CsvParserLib\CsvParserLib.Tests\CsvParserLib.Tests.csproj", "{E77C69CC-C7E9-41EE-91A8-AB1364A1EA4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43138766-D48B-4236-BF1F-A280A97FF0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43138766-D48B-4236-BF1F-A280A97FF0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43138766-D48B-4236-BF1F-A280A97FF0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43138766-D48B-4236-BF1F-A280A97FF0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC43DE32-DB99-42EB-AE33-3ECD84845E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC43DE32-DB99-42EB-AE33-3ECD84845E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC43DE32-DB99-42EB-AE33-3ECD84845E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC43DE32-DB99-42EB-AE33-3ECD84845E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E77C69CC-C7E9-41EE-91A8-AB1364A1EA4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77C69CC-C7E9-41EE-91A8-AB1364A1EA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77C69CC-C7E9-41EE-91A8-AB1364A1EA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77C69CC-C7E9-41EE-91A8-AB1364A1EA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC43DE32-DB99-42EB-AE33-3ECD84845E84} = {409693E8-FAD7-43CD-AD80-ADB209117144}
+		{E77C69CC-C7E9-41EE-91A8-AB1364A1EA4C} = {409693E8-FAD7-43CD-AD80-ADB209117144}
+	EndGlobalSection
+EndGlobal
