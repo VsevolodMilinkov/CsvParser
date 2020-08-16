@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParser", "CsvParser\CsvParser.csproj", "{43138766-D48B-4236-BF1F-A280A97FF0A4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csvParserLib", "csvParserLib", "{409693E8-FAD7-43CD-AD80-ADB209117144}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CsvParserLib", "CsvParserLib", "{409693E8-FAD7-43CD-AD80-ADB209117144}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvParserLib", "CsvParserLib\CsvParserLib\CsvParserLib.csproj", "{FC43DE32-DB99-42EB-AE33-3ECD84845E84}"
 EndProject
