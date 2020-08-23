@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using CommandLine;
+using CsvParserLib;
 
 namespace CsvParser
 {
@@ -16,6 +17,15 @@ namespace CsvParser
                     .ParseArguments<Options>(args)
                     .WithParsed(op => RunParsing(op));
             }
+            catch (ParserException e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+            catch (ProgramException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             catch (Exception e)
             {
                 Console.WriteLine(e);
@@ -23,11 +33,23 @@ namespace CsvParser
             }
         }
 
-        private static bool RunParsing(Options opts)
+        private static void RunParsing(Options opts)
         {
-            var parser = new CsvParserLib.Parser(opts.In, opts.Out, Encoding.GetEncoding(opts.Enc), opts.Col, opts.Exp);
+            Encoding encoding;
+            try
+            {
+                encoding = Encoding.GetEncoding(opts.Enc);
+            }
+            catch (ArgumentException)
+            {
+                throw new ProgramException($"Кодировка \"{opts.Enc}\" либо не поддерживается, либо в названии кодировки допущена ошибка.");
+            }
+            var parser = new CsvParserLib.Parser(opts.In, opts.Out, encoding, opts.Col, opts.Exp);
             var success = parser.Parse();
-            return success;
+            if (success)
+                Console.WriteLine($"Парсинг файла {opts.In} завершен успешно!");
+            Console.WriteLine("Чтобы закончить, нажмите любую клавишу...");
+            Console.ReadKey();
         }
     }
 }
